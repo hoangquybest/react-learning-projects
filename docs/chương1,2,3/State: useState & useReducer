@@ -1,0 +1,41 @@
+State: useState & useReducer
+
+1. state: Là thông tin được lưu bên trong component, tức là thuộc về component đó, và component đó có thể tuỳ chỉnh các state đó.
+
+2. React hooks là tính năng cho phép chúng ta sử dụng state và các tính năng khác của react mà không cần phải sử dụng class. sử dụng hooks trong functional components
+
+3. 
+// Các step
+// 1. enabling state: useState(...)
+// 2. initialize state
+// 3. reading state
+// 4. update state
+
+4. Để di chuyển code lên/ xuống
+Mac: option + up/down
+Window: alt + up/down
+
+5. Những nguyên tắc khi sử dụng state
+- Viết state ở phía trên cùng trong func component, (không được viết trong vòng lặp, không được viết trong câu điều kiện, không được viết trong func)
+
+6. Stale state
+
+7. Khi rendering list thì bắt buộc phải truyền thêm cái key
+
+8. 
+object destructuring: const {name, age} = student
+array destructuring: const [value1, value2] = value 
+
+9.
+
+Vào unplash lấy image đẹp
+Vào dribble xem design đẹp
+
+
+10. Sử lý state phức tạp như thế nào 
+
+11. hook useReducer giải quyết trường hợp state quá phức tạp, ví dụ một mảng gồm nhiều object hay một object quá nhiều properties.
+
+12. Update state: 
+
+

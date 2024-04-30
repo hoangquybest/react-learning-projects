@@ -1,0 +1,60 @@
+/*
+    phím tắt cho 
+    w500, h500
+*/
+.game-board {
+  margin: 25px;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  /* 3 cột mỗi cột chiếm một phần bằng nhau*/
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 dòng mỗi dòng chiếm một phần bằng nhau*/
+  /* Nhớ chú ý phải thêm ko sẽ bị lỗi nó tự dãn theo chiều dọc*/
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+
+/*Phim tat flex-center
+    fz40 -> font-size: 40px;
+*/
+
+/*
+    Phím tắt get-shadow1 -> 
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+*/
+.game-cell {
+  /* border: 1px solid #ccc; */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 100px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/*Phim tat c-blue*/
+.game-cell.is-x {
+  color: #2cccff;
+}
+
+.game-cell.is-o {
+  color: #ff6651;
+}
+
+.reset-btn {
+  margin: 25px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #6a5af9;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.game-winner {
+  font-size: 20px;
+  color: #2cccff;
+}
